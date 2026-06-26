@@ -221,6 +221,12 @@ textarea {
   filter: drop-shadow(0 22px 36px rgba(22, 33, 42, 0.18));
 }
 
+@media (min-width: 921px) {
+  .hero-logo {
+    transform: translateX(clamp(-26px, -1.4vw, -14px));
+  }
+}
+
 .hero-content {
   color: var(--white);
   display: grid;
