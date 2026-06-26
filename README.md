@@ -17,7 +17,7 @@ when deployed through Cloudflare Workers.
 ## Future Updates
 
 - Service list and FAQ answers as the company offerings get more specific
-- `assets/hero-pressure-washing.jpg` if your friend has real job photos
+- Hero logo/copy refinements as the brand assets evolve
 - Before/after result photos in `assets/results/`
 
 ## Cloudflare Deployment
@@ -64,7 +64,6 @@ the person requesting the estimate.
 - `functions/api/estimate.js` sends estimate request emails.
 - `wrangler.toml` configures Cloudflare Workers static assets.
 - `assets/logo.jpg` is the original supplied logo.
-- `assets/logo-cropped.jpg` is the cropped web copy used by the page.
-- `assets/hero-pressure-washing.jpg` is the local hero image.
+- `assets/logo-cropped.jpg` is the cropped web copy used by the header, favicon, and hero.
 - `assets/Images/` contains the original before/after uploads.
 - `assets/results/` contains optimized, purpose-named copies used by the page.

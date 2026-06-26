@@ -193,39 +193,38 @@ textarea {
   position: relative;
   min-height: min(760px, 82svh);
   overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  background:
+    linear-gradient(90deg, var(--paper) 0%, var(--paper) 44%, var(--blue-deep) 44%, #0b2f49 100%);
+}
+
+.hero-inner {
+  width: min(var(--max), calc(100% - 48px));
+  margin: 0 auto;
+  padding: 76px 0 84px;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.86fr) minmax(460px, 1fr);
+  align-items: center;
+  gap: 68px;
+}
+
+.hero-visual {
   display: grid;
   align-items: center;
-  isolation: isolate;
+  justify-items: start;
 }
 
-.hero-media,
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-}
-
-.hero-media {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 42%;
-  z-index: -2;
-}
-
-.hero-overlay {
-  z-index: -1;
-  background:
-    linear-gradient(90deg, rgba(22, 33, 42, 0.3), rgba(22, 33, 42, 0.26) 42%, rgba(12, 56, 87, 0.82)),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent 36%, rgba(0, 0, 0, 0.1));
+.hero-logo {
+  width: min(430px, 100%);
+  height: auto;
+  filter: drop-shadow(0 22px 36px rgba(22, 33, 42, 0.18));
 }
 
 .hero-content {
-  width: min(var(--max), calc(100% - 48px));
-  margin: 0 auto;
-  padding: 64px 0 72px;
   color: var(--white);
   display: grid;
-  justify-items: end;
+  justify-items: start;
 }
 
 .hero-content > * {
@@ -915,18 +914,17 @@ details p {
     padding: 0 10px;
   }
 
-  .hero-content {
-    justify-items: start;
+  .hero {
+    background: var(--blue-deep);
   }
 
-  .hero-content > * {
-    width: min(590px, 100%);
+  .hero-inner {
+    grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
+    gap: 34px;
   }
 
-  .hero-overlay {
-    background:
-      linear-gradient(90deg, rgba(12, 56, 87, 0.88), rgba(12, 56, 87, 0.54), rgba(22, 33, 42, 0.28)),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.18));
+  .hero-logo {
+    width: min(280px, 100%);
   }
 
   .service-grid,
@@ -967,7 +965,7 @@ details p {
 
   .nav,
   .section-inner,
-  .hero-content {
+  .hero-inner {
     width: min(100% - 32px, var(--max));
   }
 
@@ -990,15 +988,21 @@ details p {
   }
 
   .hero {
-    min-height: 80svh;
+    min-height: auto;
   }
 
-  .hero-media {
-    object-position: 42% center;
+  .hero-inner {
+    padding: 40px 0 54px;
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 
-  .hero-content {
-    padding: 46px 0 50px;
+  .hero-visual {
+    justify-items: center;
+  }
+
+  .hero-logo {
+    width: min(260px, 82vw);
   }
 
   h1 {

@@ -1,9 +1,7 @@
 # Credits
 
-Hero photo: Caitlin Whealy on Pexels.
+Current live visuals use the supplied JaxWorks LLC logo and real job photos.
 
-Source page discovered via Pexels pressure washing search:
-https://www.pexels.com/search/pressure%20washing/
-
-Direct image URL used:
+The local `assets/hero-pressure-washing.jpg` stock image is no longer referenced by the page
+or included in the Cloudflare deployment bundle. It came from Caitlin Whealy on Pexels:
 https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg
