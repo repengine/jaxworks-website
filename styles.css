@@ -806,10 +806,6 @@ h3 {
   color: var(--ink-soft);
 }
 
-.reviews-note {
-  font-size: 0.9rem;
-}
-
 .faq-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.68fr) minmax(420px, 1fr);
