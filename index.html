@@ -18,6 +18,12 @@
     <meta property="og:url" content="https://jaxworks.com" />
     <link rel="icon" href="assets/logo-cropped.jpg" />
     <link rel="preload" href="assets/logo-cropped.jpg" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
     {
@@ -72,15 +78,24 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-inner">
           <div class="hero-visual">
-            <img
-              class="hero-logo"
-              src="assets/logo-hero.jpg"
-              alt="JaxWorks LLC pressure washing logo"
-            />
+            <div class="hero-badge">
+              <img
+                class="hero-logo"
+                src="assets/logo-hero.jpg"
+                alt="JaxWorks LLC pressure washing logo"
+              />
+            </div>
           </div>
 
           <div class="hero-content">
             <p class="eyebrow">Licensed and insured exterior cleaning</p>
+            <p class="tagline-ribbon">
+              <span>Restore</span>
+              <i class="wave-rule" aria-hidden="true"></i>
+              <span>Refresh</span>
+              <i class="wave-rule" aria-hidden="true"></i>
+              <span>Renew</span>
+            </p>
             <h1 id="hero-title">Pressure Washing Jacksonville, FL</h1>
             <p class="hero-copy">
               Soft-wash house cleaning, concrete brightening, and detail-minded surface care
@@ -132,32 +147,75 @@
 
           <div class="service-grid">
             <article class="service-card">
-              <span class="service-icon" aria-hidden="true">01</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                  <line x1="3" y1="7" x2="21" y2="7" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="17" x2="15" y2="17" />
+                  <path d="M18.4 14.6c1.3 1.4 1.3 2.9 0 3.9-1.3-1-1.3-2.5 0-3.9z" fill="currentColor" stroke="none" />
+                </svg>
+              </span>
               <h3>House Soft Washing</h3>
               <p>Low-pressure siding washes for algae, mildew, pollen, and everyday buildup.</p>
             </article>
             <article class="service-card">
-              <span class="service-icon" aria-hidden="true">02</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                  <rect x="3" y="4" width="7" height="6.5" />
+                  <rect x="14" y="4" width="7" height="6.5" />
+                  <rect x="3" y="13.5" width="7" height="6.5" />
+                  <rect x="14" y="13.5" width="7" height="6.5" />
+                </svg>
+              </span>
               <h3>Driveways and Walkways</h3>
               <p>Surface-cleaned concrete, brick, and pavers with an even, consistent finish.</p>
             </article>
             <article class="service-card">
-              <span class="service-icon" aria-hidden="true">03</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                  <line x1="5" y1="3" x2="5" y2="21" />
+                  <line x1="10.3" y1="3" x2="10.3" y2="21" />
+                  <line x1="15.6" y1="3" x2="15.6" y2="21" />
+                  <line x1="21" y1="3" x2="21" y2="21" />
+                  <line x1="3" y1="8" x2="21" y2="8" stroke-width="1.2" opacity="0.6" />
+                </svg>
+              </span>
               <h3>Decks and Fences</h3>
               <p>Wood and composite cleaning that removes grime without cutting into the grain.</p>
             </article>
             <article class="service-card">
-              <span class="service-icon" aria-hidden="true">04</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18" />
+                  <path d="M6 6v3a3 3 0 0 0 3 3h1" />
+                  <path d="M10 12v3.5" />
+                  <path d="M10 18.7c1.2 1.2 1.2 2.5 0 3.4-1.2-.9-1.2-2.2 0-3.4z" fill="currentColor" stroke="none" />
+                </svg>
+              </span>
               <h3>Gutters and Fascia</h3>
               <p>Brightening for exterior gutter faces, soffits, trim, and drip-line staining.</p>
             </article>
             <article class="service-card">
-              <span class="service-icon" aria-hidden="true">05</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9h18" />
+                  <path d="M4 9 6 4h12l2 5" />
+                  <rect x="6" y="9" width="12" height="10" />
+                  <path d="M11 19v-4h2v4" />
+                </svg>
+              </span>
               <h3>Storefronts</h3>
               <p>Entryways, sidewalks, dumpster pads, awnings, and exterior customer areas.</p>
             </article>
             <article class="service-card">
-              <span class="service-icon" aria-hidden="true">06</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12a8 8 0 0 1 13.6-5.7" />
+                  <path d="M20 12a8 8 0 0 1-13.6 5.7" />
+                  <path d="M17.6 3.5v3.3h-3.3" />
+                  <path d="M6.4 20.5v-3.3h3.3" />
+                </svg>
+              </span>
               <h3>Seasonal Maintenance</h3>
               <p>Recurring cleanups for spring pollen, fall grime, listing prep, and events.</p>
             </article>
